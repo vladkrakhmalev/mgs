@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="dist/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="v-container">
+      <a href="/" class="logo">
+        <img src="img/logo.png" alt="" class="logo__image">
+      </a>
+      <div class="header__info">
+        <div class="header__item">
+          <div class="header__icon header__icon-1"></div>
+          <div class="header__text"><p>Московская обл., г. Клин, Ленинградское шоссе, дом 1</p></div>
+        </div>
+        <div class="header__item">
+          <div class="header__icon header__icon-2"></div>
+          <div class="header__text"><p>mgs-doors@yandex.ru</p></div>
+        </div>
+        <div class="header__item">
+          <div class="header__icon header__icon-3"></div>
+          <div class="header__text"><p>+7 (495) 363–24–31</p></div>
+        </div>
+      </div>
+      <div class="header__btn">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="header__menu">
+        <ul>
+          <li class="header__item header__item_active"><a href="catalog.html">КАТАЛОГ</a></li>
+          <li class="header__item"><a href="installation.html">УСТАНОВКА</a></li>
+          <li class="header__item"><a href="delivery.html">ДОСТАВКА И ОПЛАТА</a></li>
+          <li class="header__item"><a href="service.html">ГАРАНТИЯ</a></li>
+          <li class="header__item"><a href="wholesalers.html">ОПТОВИКАМ</a></li>
+          <li class="header__item"><a href="contact.html">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+      <div class="header__line"></div>
+    </div>
+  </header>
+
+  <div class="catalog">
+    <div class="v-container">
+      <button class="catalog-filter__btn-open button-second">Открыть фильтры</button>
+      <form class="catalog-filter catalog-filter_close">
+        <div class="catalog-filter__item">
+          <div class="catalog-filter__header">
+            <p class="catalog-filter__title">Цена</p>
+            <p class="catalog-filter__btn catalog-filter__btn_down"></p>
+          </div>
+
+
+
+          <div class="catalog-filter__body catalog-filter__body_open">
+            <input type="number" class="catalog-filter__number catalog-filter__number-1" value="1" min="1" max="1000">
+            <div class="catalog-filter__line"></div>
+            <input type="number" class="catalog-filter__number catalog-filter__number-2" value="400" min="1" max="1000">
+            <div class="catalog-filter__slider-range"></div>
+          </div>
+
+
+
+        </div>
+        <div class="catalog-filter__item">
+          <div class="catalog-filter__header">
+            <p class="catalog-filter__title">Толщина металла</p>
+            <p class="catalog-filter__btn catalog-filter__btn_up"></p>
+          </div>
+          <div class="catalog-filter__body catalog-filter__body_close">
+            <select class="catalog-filter__select">
+              <option value="All">Все</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="catalog-filter__item">
+          <div class="catalog-filter__header">
+            <p class="catalog-filter__title">Кол-во контуров уплотнения</p>
+            <p class="catalog-filter__btn catalog-filter__btn_up"></p>
+          </div>
+          <div class="catalog-filter__body catalog-filter__body_close">
+            <select class="catalog-filter__select">
+              <option value="All">Все</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="catalog-filter__item">
+          <div class="catalog-filter__header">
+            <p class="catalog-filter__title">Терморазрыв</p>
+            <p class="catalog-filter__btn catalog-filter__btn_up"></p>
+          </div>
+          <div class="catalog-filter__body catalog-filter__body_close">
+            <select class="catalog-filter__select">
+              <option value="All">Все</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="catalog-filter__item">
+          <div class="catalog-filter__header">
+            <p class="catalog-filter__title">Материал внешней отделки</p>
+            <p class="catalog-filter__btn catalog-filter__btn_up"></p>
+          </div>
+          <div class="catalog-filter__body catalog-filter__body_close">
+            <input class="catalog-filter__checkbox" type="checkbox" name="exterior-material" value="Винилискожа" id="exterior-material-1">
+            <label class="catalog-filter__label" for="exterior-material-1"><span></span><p>Винилискожа</p></label>
+            <input class="catalog-filter__checkbox" type="checkbox" name="exterior-material" value="Массив" id="exterior-material-2">
+            <label class="catalog-filter__label" for="exterior-material-2"><span></span><p>Массив</p></label>
+            <input class="catalog-filter__checkbox" type="checkbox" name="exterior-material" value="МДФ в плёнке ПВХ" id="exterior-material-3">
+            <label class="catalog-filter__label" for="exterior-material-3"><span></span><p>МДФ в плёнке ПВХ</p></label>
+            <input class="catalog-filter__checkbox" type="checkbox" name="exterior-material" value="МДФ в шпоне" id="exterior-material-4">
+            <label class="catalog-filter__label" for="exterior-material-4"><span></span><p>МДФ в шпоне</p></label>
+            <input class="catalog-filter__checkbox" type="checkbox" name="exterior-material" value="Металл окрашенный" id="exterior-material-5">
+            <label class="catalog-filter__label" for="exterior-material-5"><span></span><p>Металл окрашенный</p></label>
+          </div>
+        </div>
+        <div class="catalog-filter__item">
+          <div class="catalog-filter__header">
+            <p class="catalog-filter__title">Материал внутренней отделки</p>
+            <p class="catalog-filter__btn catalog-filter__btn_up"></p>
+          </div>
+          <div class="catalog-filter__body catalog-filter__body_close">
+            <input class="catalog-filter__checkbox" type="checkbox" name="decoration-material" value="Винилискожа" id="decoration-material-1">
+            <label class="catalog-filter__label" for="decoration-material-1"><span></span><p>Винилискожа</p></label>
+            <input class="catalog-filter__checkbox" type="checkbox" name="decoration-material" value="Ламинат" id="decoration-material-1">
+            <label class="catalog-filter__label" for="decoration-material-1"><span></span><p>Ламинат</p></label>
+            <input class="catalog-filter__checkbox" type="checkbox" name="decoration-material" value="Массив" id="decoration-material-2">
+            <label class="catalog-filter__label" for="decoration-material-2"><span></span><p>Массив</p></label>
+            <input class="catalog-filter__checkbox" type="checkbox" name="decoration-material" value="МДФ в плёнке ПВХ" id="decoration-material-3">
+            <label class="catalog-filter__label" for="decoration-material-3"><span></span><p>МДФ в плёнке ПВХ</p></label>
+            <input class="catalog-filter__checkbox" type="checkbox" name="decoration-material" value="МДФ в шпоне" id="decoration-material-4">
+            <label class="catalog-filter__label" for="decoration-material-4"><span></span><p>МДФ в шпоне</p></label>
+            <input class="catalog-filter__checkbox" type="checkbox" name="decoration-material" value="Металл окрашенный" id="decoration-material-5">
+            <label class="catalog-filter__label" for="decoration-material-5"><span></span><p>Металл окрашенный</p></label>
+          </div>
+        </div>
+        <button type="button" class="button-first">ПРИМЕНИТЬ</button>
+        <div class="catalog-filter__divider"></div>
+        <button type="button" class="catalog-filter__clear">ОЧИСТИТЬ ФИЛЬТР</button>
+      </form>
+      <div class="catalog-content">
+        <div class="catalog-pagination catalog-pagination-top">
+          <div class="catalog-pagination__label">
+            <div class="catalog-pagination__icon"></div>
+            <p class="catalog-pagination__text">Товары <span class="catalog-pagination__quantity-vis">1 - 48</span> из <span class="catalog-pagination__quantity-all">10738</span></p>
+          </div>
+          <div class="catalog-pagination__nav">
+            <button class="catalog-pagination__nav-left"><</button>
+            <button class="catalog-pagination__nav-item">1</button>
+            <button class="catalog-pagination__nav-item">2</button>
+            <button class="catalog-pagination__nav-item">3</button>
+            <button class="catalog-pagination__nav-item">4</button>
+            <button class="catalog-pagination__nav-item">...</button>
+            <button class="catalog-pagination__nav-right">></button>
+          </div>
+        </div>
+        <div class="catalog-wrapper">
+          <a href="product.html" class="catalog-wrapper__item">
+            <div class="catalog-wrapper__image">
+              <span class="volume"></span>
+              <span class="volume-dialog">Это первая надпись</span>
+              <span class="cold"></span>
+              <span class="cold-dialog">Это вторая надпись</span>
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div>
+          </a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+          <a href="product.html" class="catalog-wrapper__item"><div class="catalog-wrapper__image">
+              <img src="img/products/product-1.png" alt="">
+            </div>
+            <p class="catalog-wrapper__title">Металл окрашенный + Винилискожа</p>
+            <div class="catalog-wrapper__prices">
+              <p class="catalog-wrapper__new-prices"><span>9 500</span> ₽</p>
+              <p class="catalog-wrapper__old-prices"><span>13 500</span> ₽</p>
+            </div></a>
+        </div>
+        <div class="catalog-pagination catalog-pagination-bottom">
+          <div class="catalog-pagination__label">
+            <div class="catalog-pagination__icon"></div>
+            <p class="catalog-pagination__text">Товары <span class="catalog-pagination__quantity-vis">1 - 48</span> из <span class="catalog-pagination__quantity-all">10738</span></p>
+          </div>
+          <div class="catalog-pagination__nav">
+            <button class="catalog-pagination__nav-left"><</button>
+            <button class="catalog-pagination__nav-item">1</button>
+            <button class="catalog-pagination__nav-item">2</button>
+            <button class="catalog-pagination__nav-item">3</button>
+            <button class="catalog-pagination__nav-item">4</button>
+            <button class="catalog-pagination__nav-item">...</button>
+            <button class="catalog-pagination__nav-right">></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="v-container">
+      <div class="footer__info">
+        <div class="logo">
+          <img src="img/logo.png" alt="" class="logo__image">
+        </div>
+        <p class="sub-title">ООО «МосГлавСталь (МГС)» © 2019</p>
+        <a href="#">БЕСПЛАТНЫЙ ЗАМЕР</a>
+        <a href="">ПОМОЩЬ В ВЫБОРЕ ДВЕРИ</a>
+        <p class="sub-title">Информация на сайте носит справочный характер и не является публичной офертой!</p>
+      </div>
+      <div class="footer__menu">
+        <p class="title">МЕНЮ САЙТА</p>
+        <a href="#">КАТАЛОГ</a>
+        <a href="#">УСТАНОВКА</a>
+        <a href="#">ДОСТАВКА И ОПЛАТА</a>
+        <a href="#">ГАРАНТИЯ</a>
+        <a href="#">ОПТОВИКАМ</a>
+        <a href="#">О КОМПАНИИ</a>
+        <a href="#">КОНТАКТЫ</a>
+      </div>
+      <div class="footer__products">
+        <p class="title">ПРОДУКЦИЯ</p>
+        <a href="#">ВСЕ МОДЕЛИ</a>
+        <a href="#">ДВЕРИ</a>
+        <a href="#">МЕТАЛЛОКОНСТРУКЦИИ</a>
+        <a href="#">ФУРНИТУРА</a>
+      </div>
+      <div class="footer__contact">
+        <p class="title">ЗАКАЗ ПРОДУКЦИИ</p>
+        <p class="sub-title">+7 (495) 363–24–31</p>
+        <p class="sub-title">mgs-doors@yandex.ru</p>
+        <p class="sub-title">Московская обл., г. Клин, Ленинградское шоссе, дом 1</p>
+        <p class="sub-title">Политика конфиденциальности</p>
+        <p class="sub-title">Пользовательское соглашение</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scripts">
+    <script src="dist/swiper/swiper-bundle.min.js"></script>
+    <script src="dist/jquery/jquery-3.5.1.min.js"></script>
+    <script src="dist/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+  </div>
+</div>
+</body>
+</html>

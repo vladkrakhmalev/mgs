@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="dist/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="v-container">
+      <a href="/" class="logo">
+        <img src="img/logo.png" alt="" class="logo__image">
+      </a>
+      <div class="header__info">
+        <div class="header__item">
+          <div class="header__icon header__icon-1"></div>
+          <div class="header__text"><p>Московская обл., г. Клин, Ленинградское шоссе, дом 1</p></div>
+        </div>
+        <div class="header__item">
+          <div class="header__icon header__icon-2"></div>
+          <div class="header__text"><p>mgs-doors@yandex.ru</p></div>
+        </div>
+        <div class="header__item">
+          <div class="header__icon header__icon-3"></div>
+          <div class="header__text"><p>+7 (495) 363–24–31</p></div>
+        </div>
+      </div>
+      <div class="header__btn">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="header__menu">
+        <ul>
+          <li class="header__item"><a href="catalog.html">КАТАЛОГ</a></li>
+          <li class="header__item"><a href="installation.html">УСТАНОВКА</a></li>
+          <li class="header__item"><a href="delivery.html">ДОСТАВКА И ОПЛАТА</a></li>
+          <li class="header__item"><a href="service.html">ГАРАНТИЯ</a></li>
+          <li class="header__item"><a href="wholesalers.html">ОПТОВИКАМ</a></li>
+          <li class="header__item"><a href="contact.html">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+      <div class="header__line"></div>
+    </div>
+  </header>
+
+  <section class="product">
+    <div class="v-container">
+      <div class="product-main-image">
+        <img src="img/products/product-2.png" alt="">
+      </div>
+      <div class="product-options-first">
+        <div class="product-options-first__info">
+          <p class="product-options-first__title">МЕТАЛЛ ОКРАШЕННЫЙ + ВИНИЛИСКОЖА</p>
+          <div class="product-options-first__prices">
+            <p class="product-options-first__price"><span>9 000</span> руб.</p>
+            <button class="product-options-first__button button-first">БЫСТРЫЙ ЗАКАЗ <span></span></button>
+          </div>
+        </div>
+        <div class="product-options-first__divider"></div>
+        <div class="product-options-first__size-door">
+          <p class="product-options-first__title">РАЗМЕР ДВЕРИ</p>
+            <div class="product-options-first__row">
+              <label for="" class="product-options-first__label"><p>ШИРИНА:</p></label> <div class="input">
+                <input type="number" name="width" class="input__main">
+                <div class="input__icon">CM</div>
+              </div>
+            </div>
+            <div class="product-options-first__row">
+              <label for="" class="product-options-first__label"><p>ВЫСОТА:</p></label> <div class="input">
+                <input type="number" name="width" class="input__main">
+                <div class="input__icon">CM</div>
+              </div>
+            </div>
+        </div>
+        <div class="product-ptions-first__color-equipment">
+          <p class="product-options-first__title">ЦВЕТ ФУРНИТУРЫ</p>
+          <div class="color">
+            <div class="color__item">
+              <input type="radio" name="color-equipment" value="gold" id='color-equipment-gold'>
+              <label for="color-equipment-gold" class="color__label" style="background: #FFBF00;"></label>
+            </div>
+            <div class="color__item">
+              <input type="radio" name="color-equipment" value="red" id='color-equipment-red'>
+              <label for="color-equipment-red" class="color__label" style="background: #C11624;"></label>
+            </div>
+          </div>
+        </div>
+        <div class="product-options-first__color-platband">
+          <p class="product-options-first__title">ЦВЕТ НАЛИЧНИКА (МЕТАЛЛОКАРКАСА)</p>
+          <div class="color">
+            <div class="color__item">
+              <input type="radio" name="color-platband" value="gold" id='color-platband-gold'>
+              <label for="color-platband-gold" class="color__label" style="background: #FFBF00;"></label>
+            </div>
+            <div class="color__item">
+              <input type="radio" name="color-platband" value="red" id='color-platband-red'>
+              <label for="color-platband-red" class="color__label" style="background: #C11624;"></label>
+            </div>
+          </div>
+        </div>
+        <div class="table">
+          <div class="table__td table__outside-title">
+            <p class="product-options-first__title">НАРУЖНАЯ ОТДЕЛКА</p>
+          </div>
+          <div class="table__td table__inside-title">
+            <p class="product-options-first__title">ВНУТРЕННЯЯ ОТДЕЛКА</p>
+          </div>
+          <div class="table__td table__outside-content">
+            <select class="table__item" name="outside-finishing">
+              <option value="Метал окрашенный">Метал окрашенный</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <div class="table__item color">
+              <div class="color__item">
+                <input type="radio" name="color-outside" value="gold" id='color-outside-gold'>
+                <label for="color-outside-gold" class="color__label" style="background: #FFBF00;"></label>
+              </div>
+              <div class="color__item">
+                <input type="radio" name="color-outside" value="red" id='color-outside-red'>
+                <label for="color-outside-red" class="color__label" style="background: #C11624;"></label>
+              </div>
+            </div>
+            <div class="table__item door">
+              <div class="door__item">
+                <input type="radio" name="door-outside" value="none" id='door-outside-none' class="door__input">
+                <label for="door-outside-none" class="door__label">
+                  <img src="img/products/pic-1.png" alt="">
+                </label>
+              </div>
+              <div class="door__item">
+                <input type="radio" name="door-outside" value="1" id='door-outside-1' class="door__input">
+                <label for="door-outside-1" class="door__label">
+                  <img src="img/products/pic-2.png" alt="">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="table__td table__inside-content">
+            <select class="table__item" name="inside-finishing">
+              <option value="Метал окрашенный">Метал окрашенный</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <div class="table__item color">
+              <div class="color__item">
+                <input type="radio" name="color-inside" value="gold" id='color-inside-gold'>
+                <label for="color-inside-gold" class="color__label" style="background: #FFBF00;"></label>
+              </div>
+              <div class="color__item">
+                <input type="radio" name="color-inside" value="red" id='color-inside-red'>
+                <label for="color-inside-red" class="color__label" style="background: #C11624;"></label>
+              </div>
+            </div>
+            <div class="table__item door">
+              <div class="door__item">
+                <input type="radio" name="door-inside" value="none" id='door-inside-none' class="door__input">
+                <label for="door-inside-none" class="door__label">
+                  <img src="img/products/pic-1.png" alt="">
+                </label>
+              </div>
+              <div class="door__item">
+                <input type="radio" name="door-inside" value="1" id='door-inside-1' class="door__input">
+                <label for="door-inside-1" class="door__label">
+                  <img src="img/products/pic-2.png" alt="">
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-options-second">
+        <div class="product-options-second__menu">
+          <div class="product-options-second__heading product-options-second__outside outside-1">
+            <p class="product-options-second__title">Вид снаружи</p>
+          </div>
+          <div class="product-options-second__heading product-options-second__inside">
+            <p class="product-options-second__title">Вид внутри</p>
+          </div>
+          <div class="product-options-second__item product-options-second__outside outside-2">
+            <p class="product-options-second__title">КОНСТРУКЦИЯ ДВЕРИ</p>
+            <select class="" name="">
+              <option value="">Стандартная</option>
+            </select>
+          </div>
+          <div class="product-options-second__item product-options-second__inside">
+            <p class="product-options-second__title">КОНСТРУКЦИЯ ДВЕРИ</p>
+            <select class="" name="">
+              <option value="">Стандартная</option>
+            </select>
+          </div>
+          <div class="product-options-second__item product-options-second__outside outside-3">
+            <p class="product-options-second__title">КОНСТРУКЦИЯ ДВЕРИ</p>
+            <select class="" name="">
+              <option value="">Стандартная</option>
+            </select>
+          </div>
+          <div class="product-options-second__item product-options-second__inside">
+            <p class="product-options-second__title">КОНСТРУКЦИЯ ДВЕРИ</p>
+            <select class="" name="">
+              <option value="">Стандартная</option>
+            </select>
+          </div>
+        </div>
+        <div class="product-options-second__content">
+          <p class="product-options-second__title">ВЫБРАННАЯ КОНСТРУКЦИЯ</p>
+          <div class="product-options-second__wrapper">
+            <div class="product-options-second__left">
+              <div class="product-options-second__elem">
+                <div class="product-options-second__icon"></div>
+                <p class="product-options-second__text">Базовая усиленная</p>
+              </div>
+              <p class="product-options-second__text">Данная конструкция применяется для стальных дверей с внутренней отделкой ламинатом, панелями МДФ от 6 до 8 мм. При использовании панелей МДФ 10-12 мм между коробкой и притвором дополнительно приваривается промежуточная полоса 20 х 4.).</p>
+            </div>
+            <div class="product-options-second__right">
+              <img src="img/image.png" alt="">
+            </div>
+          </div>
+          <div class="product-options-second__row">
+            <p class="product-options-second__title">Полотно двери</p>
+            <div class="product-options-second__line"></div>
+            <p class="product-options-second__text">Из цельного гнутого листа металла</p>
+          </div>
+          <div class="product-options-second__row">
+            <p class="product-options-second__title">Полотно двери</p>
+            <div class="product-options-second__line"></div>
+            <p class="product-options-second__text">Из цельного гнутого листа металла</p>
+          </div>
+          <div class="product-options-second__row">
+            <p class="product-options-second__title">Полотно двери</p>
+            <div class="product-options-second__line"></div>
+            <p class="product-options-second__text">Из цельного гнутого листа металла</p>
+          </div>
+          <div class="product-options-second__row">
+            <p class="product-options-second__title">Полотно двери</p>
+            <div class="product-options-second__line"></div>
+            <p class="product-options-second__text">Из цельного гнутого листа металла</p>
+          </div>
+          <div class="product-options-second__row">
+            <p class="product-options-second__title">Полотно двери</p>
+            <div class="product-options-second__line"></div>
+            <p class="product-options-second__text">Из цельного гнутого листа металла</p>
+          </div>
+          <div class="product-options-second__row">
+            <p class="product-options-second__title">Полотно двери</p>
+            <div class="product-options-second__line"></div>
+            <p class="product-options-second__text">Из цельного гнутого листа металла</p>
+          </div>
+          <div class="product-options-second__row">
+            <p class="product-options-second__title">Полотно двери</p>
+            <div class="product-options-second__line"></div>
+            <p class="product-options-second__text">Из цельного гнутого листа металла</p>
+          </div>
+          <div class="product-options-second__row">
+            <p class="product-options-second__title">Полотно двери</p>
+            <div class="product-options-second__line"></div>
+            <p class="product-options-second__text">Из цельного гнутого листа металла</p>
+          </div>
+          <div class="product-options-second__row">
+            <p class="product-options-second__title">Полотно двери</p>
+            <div class="product-options-second__line"></div>
+            <p class="product-options-second__text">Из цельного гнутого листа металла</p>
+          </div>
+          <div class="product-options-second__row">
+            <p class="product-options-second__title">Полотно двери</p>
+            <div class="product-options-second__line"></div>
+            <p class="product-options-second__text">Из цельного гнутого листа металла</p>
+          </div>
+        </div>
+      </div>
+      <div class="product-delivery">
+        <p class="product-delivery__title">ДОСТАВКА И МОНТАЖ</p>
+        <p class="product-delivery__text">Доставка в пределах 5 км от МКАД - бесплатно!</p>
+        <p class="product-delivery__text">Доставка по Московской области - 15 руб./км.Бесплатная доставка - для двери с конструкцией "Термо" (дверь с терморазрывом)</p>
+        <p class="product-delivery__text">Монтаж дверей мы осуществляем бесплатно! Цена на установку может изменяться в том случае, если вам потребуются какие-либо <a href="#">дополнительные услуги</a></p>
+        <div class="product-delivery__wrapper">
+          <p class="product-delivery__title">ОПЛАТА</p>
+          <div class="product-delivery__item">
+            <div class="product-delivery__icon">
+              <img src="img/delivery-1.png" alt="">
+            </div>
+            <div class="product-delivery__text">Оплата наличными по факту</div>
+          </div>
+          <div class="product-delivery__item">
+            <div class="product-delivery__icon">
+              <img src="img/delivery-2.png" alt="">
+            </div>
+            <div class="product-delivery__text">Перевод на карту или через терминал</div>
+          </div>
+          <div class="product-delivery__item">
+            <div class="product-delivery__icon">
+              <img src="img/delivery-3.png" alt="">
+            </div>
+            <div class="product-delivery__text">Оплата по безналичному расчету</div>
+          </div>
+          <div class="product-delivery__item">
+            <div class="product-delivery__icon">
+              <img src="img/delivery-4.png" alt="">
+            </div>
+            <div class="product-delivery__text">Оплата картой</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="v-container">
+      <div class="footer__info">
+        <div class="logo">
+          <img src="img/logo.png" alt="" class="logo__image">
+        </div>
+        <p class="sub-title">ООО «МосГлавСталь (МГС)» © 2019</p>
+        <a href="#">БЕСПЛАТНЫЙ ЗАМЕР</a>
+        <a href="">ПОМОЩЬ В ВЫБОРЕ ДВЕРИ</a>
+        <p class="sub-title">Информация на сайте носит справочный характер и не является публичной офертой!</p>
+      </div>
+      <div class="footer__menu">
+        <p class="title">МЕНЮ САЙТА</p>
+        <a href="#">КАТАЛОГ</a>
+        <a href="#">УСТАНОВКА</a>
+        <a href="#">ДОСТАВКА И ОПЛАТА</a>
+        <a href="#">ГАРАНТИЯ</a>
+        <a href="#">ОПТОВИКАМ</a>
+        <a href="#">О КОМПАНИИ</a>
+        <a href="#">КОНТАКТЫ</a>
+      </div>
+      <div class="footer__products">
+        <p class="title">ПРОДУКЦИЯ</p>
+        <a href="#">ВСЕ МОДЕЛИ</a>
+        <a href="#">ДВЕРИ</a>
+        <a href="#">МЕТАЛЛОКОНСТРУКЦИИ</a>
+        <a href="#">ФУРНИТУРА</a>
+      </div>
+      <div class="footer__contact">
+        <p class="title">ЗАКАЗ ПРОДУКЦИИ</p>
+        <p class="sub-title">+7 (495) 363–24–31</p>
+        <p class="sub-title">mgs-doors@yandex.ru</p>
+        <p class="sub-title">Московская обл., г. Клин, Ленинградское шоссе, дом 1</p>
+        <p class="sub-title">Политика конфиденциальности</p>
+        <p class="sub-title">Пользовательское соглашение</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scripts">
+    <script src="dist/swiper/swiper-bundle.min.js"></script>
+    <script src="dist/jquery/jquery-3.5.1.min.js"></script>
+    <script src="dist/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+  </div>
+</div>
+</body>
+</html>
